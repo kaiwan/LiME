@@ -46,7 +46,7 @@
 
 #define LIME_RAMSTR "System RAM"
 #define LIME_MAX_FILENAME_SIZE 256
-#define LIME_MAGIC 0x4C694D45 //LiME
+#define LIME_MAGIC 0x4C694D45	//LiME
 
 #define LIME_MODE_RAW 0
 #define LIME_MODE_LIME 1
@@ -87,13 +87,11 @@
 //structures
 
 typedef struct {
-    unsigned int magic;
-    unsigned int version;
-    unsigned long long s_addr;
-    unsigned long long e_addr;
-    unsigned char reserved[8];
-} __attribute__ ((__packed__)) lime_mem_range_header;
+	unsigned int magic;
+	unsigned int version;
+	unsigned long long s_addr;
+	unsigned long long e_addr;
+	unsigned char reserved[8];
+} __attribute__((__packed__)) lime_mem_range_header;
 
-
-
-#endif //__LIME_H_
+#endif				//__LIME_H_
