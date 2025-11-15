@@ -59,3 +59,11 @@ clean:
 distclean: mrproper
 mrproper:    clean
 	rm -f *.ko
+
+# other / misc targets
+tags:
+#	ctags -R
+	ctags $(find . -name "*.[chs]")
+cscope:
+	find . -name "*.[chS]" > cscope.files
+	cscope -b -q -k
